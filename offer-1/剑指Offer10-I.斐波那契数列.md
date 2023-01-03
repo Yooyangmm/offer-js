@@ -57,7 +57,7 @@ var fib = function(n) {
 
 #### 解法二：矩阵快速幂
 
-![1672726838134](images\1672726838134.png)
+<img src="images\1672726838134.png" alt="1672728632326" style="zoom: 100%;" />
 
 因此，令
 
