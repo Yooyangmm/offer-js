@@ -57,11 +57,11 @@ var fib = function(n) {
 
 #### 解法二：矩阵快速幂
 
-![1672726838134](C:\Code\offer-js\offer-1\images\1672726838134.png)
+![1672726838134](images\1672726838134.png)
 
 因此，令
 
-<img src="C:\Code\offer-js\offer-1\images\1672728632326.png" alt="1672728632326" style="zoom: 5%;" />
+<img src="images\1672728632326.png" alt="1672728632326" style="zoom: 5%;" />
 
 因此只要快速计算矩阵 `M` 的 `n` 次幂，就可以得到 `F(n)` 的值。
 
