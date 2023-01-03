@@ -47,7 +47,7 @@ var findNumberIn2DArray = function(matrix, target) {
 
 ​	题干中说到：`每一行都按照从左到右非递减的顺序排序，每一列都按照从上到下非递减的顺序排序` 。因此我们将二维数组向左旋转45度后，这个二维数组可以看成一个二叉排序树（每一个节点的左子节点都小于该节点，每一个节点的右子节点都大于该节点），因此我们可以直接从右上角的元素x开始，和 `target` 比较：若相等则说明找到了；若 `x > target`，则向右子树找；否则就向左子树找。
 
-![image-20221230151657345](C:\Users\杨杨\AppData\Roaming\Typora\typora-user-images\image-20221230151657345.png)
+![image-20221230151657345](images/image-20221230151657345.png)
 
 ```js
 /**
