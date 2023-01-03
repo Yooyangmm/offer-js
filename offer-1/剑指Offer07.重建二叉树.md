@@ -10,7 +10,7 @@ Medium
 
 #### 示例1：
 
-![image-20230103112634249](C:\Users\杨杨\AppData\Roaming\Typora\typora-user-images\image-20230103112634249.png)
+![image-20230103112634249](images\image-20230103112634249.png)
 
 ```
 Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
