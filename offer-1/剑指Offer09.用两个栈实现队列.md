@@ -1,4 +1,4 @@
-# 剑指 Offer 09. 用两个栈实现队列
+# 剑指Offer09.用两个栈实现队列
 
 ### 题目：
 
@@ -62,13 +62,13 @@ CQueue.prototype.appendTail = function(value) {
  * @return {number}
  */
 CQueue.prototype.deleteHead = function() {
-    if (this.outStack.length) { // 如果outStack中仍存在逆序元素，直接pop
+    if (this.outStack.length) { // 如果outStack中仍存在逆序元素，直接pop出栈顶元素
         return this.outStack.pop()
     }
     if (!this.inStack.length) { // 如果inStack和outStack都为空，说明队列中没有元素，返回-1
         return -1
     }
-    while(this.inStack.length) { // 将inStack中的元素插入outStack
+    while(this.inStack.length) { // 从inStack的栈顶pop出元素，并推入outStack栈中，起到了逆序的作用
         this.outStack.push(this.inStack.pop())
     }
     return this.outStack.pop()
